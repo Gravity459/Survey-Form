@@ -1,0 +1,163 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    font-size: large;
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(0, 204, 255);
+    font-weight: 1000;
+}
+
+.text-label {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-input {
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    height: 850px;
+    background-color: rgb(255, 38, 0);
+    background-image: linear-gradient(to bottom, rgb(255, 38, 0), orange ,yellow);
+}
+
+.form-elements {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(255, 196, 0); */
+}
+
+.form-data {
+    width: 600px;
+    height: 800px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, rgb(89, 0, 255) , rgb(0, 255, 234));
+    background-color: rgb(0, 204, 255);
+    flex-direction: column;
+}
+
+.form-group {
+    width: 100%;
+    height: 60px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.form-group select {
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+/* #survey-form {
+    height: 800px;
+} */
+
+.radio-button-group {
+    width: 100%;
+    height: 125px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.radio-input, .checkbox-input {
+    width: 50%;
+    height: 30px;    
+}
+
+.radio-input input, .checkbox-input input {
+    width: 15px;
+    height: 15px;
+    margin: 10px 10px 10px 0;
+}
+
+.checkboxes-group {
+    width: 100%;
+    height: 150px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.comments-area {
+    width: 100%;
+    height: 130px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+
+#comments {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    width: 300px;
+    max-width: 70%;
+    height: 70px;
+    max-height: 100px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 200px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#submit:hover{
+    font-size: x-large;
+    background-color: rgb(172, 172, 172);
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

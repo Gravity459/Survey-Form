@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <h1 id="title">
+            Sweets Survey Form
+        </h1>
+        
+        <p id="description">
+            This a survey about sweets so we can find out which sweets are the most preferred
+            among the whole world.
+        </p>
+    </div>
+
+    <div class="container"> 
+
+
+        <div class="form-elements">
+
+            <div class="form-data">
+
+                <form id="survey-form">
+                    <label class="text-label" id="name-label" for="name">Name: 
+                        <input class="text-input" id="name" type="text" placeholder="Name" required>
+                    </label>
+                    
+                    <label class="text-label" id="email-label" for="email">Email:
+                        <input class="text-input" id="email" type="email" placeholder="Email" required>
+                    </label>
+                    
+                    <label class="text-label" id="number-label" for="number">Number:
+                        <input class="text-input" id="number" type="number" min="0" max="100" placeholder="Number">
+                    </label>
+                    
+                    <div class="form-group">
+                        <p>Select the Best Sweet you like:</p>
+                        <select id="dropdown" name="sweet" required>
+                            <option disabled selected value>
+                                Select Best Sweet
+                            </option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="jellies">Jellies</option>
+                            <option value="lollipop">Lollipops</option>
+                            <option value="confectionery">Confectionery Items</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="radio-button-group">
+                        <p>How often do you consume sweets?</p>
+        
+                        <label class="radio-input" for="everyday">
+                            <input id="everyday" type="radio" name="frequency" value="everyday">Everyday
+                        </label>
+        
+                        <label class="radio-input" for="sometimes">
+                            <input id="sometimes" type="radio" name="frequency" value="sometimes">Sometimes
+                        </label>
+        
+                        <label class="radio-input" for="rarely">
+                            <input id="rarely" type="radio" name="frequency" value="rarely" checked>Rarely/Occasionally
+                        </label>
+                    </div>
+        
+                    <div class="checkboxes-group">
+                        <p>Which of the following brands do you like the most? (Check all that you like)</p>
+                        <label class="checkbox-input" for="cadbury">
+                            <input id="cadbury" type="checkbox" name="brand" 
+                            value="cadbury">Cadbury
+                        </label>
+        
+                        <label class="checkbox-input" for="hersheys">
+                            <input id="hersheys" type="checkbox" name="brand" 
+                            value="hersheys">Hersheys
+                        </label>
+        
+                        <label class="checkbox-input" for="skittles">
+                            <input id="skittles" type="checkbox" name="brand" 
+                            value="skittles">Skittles
+                        </label>
+        
+                        <label class="checkbox-input" for="chupa-chups">
+                            <input id="chupa-chups" type="checkbox" name="brand" 
+                            value="chupa-chups">Chupa Chups
+                        </label>
+                    </div>
+                    
+                    <div class="comments-area">
+                        <p>Any comments/suggesions?</p>
+                        <textarea id="comments" name="comment" placeholder="Enter your comments here...">
+                        </textarea>
+                    </div>
+                    
+                </form>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Made with guidance from FCC
+    </div>
+</body>
+</html>
